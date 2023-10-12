@@ -11,10 +11,6 @@ body {
     user-select: none;
 }
 
-::placeholder {
-    text-align: left;
-}
-
 .navbar-content {
     max-width: 1800px;
     height: 100px;
@@ -327,7 +323,7 @@ body {
 
 .footer-section .footer-section-email-input-container form {
     width: 80%;
-    height: 85px;
+    height: 75px;
     border-bottom: 1px solid #000000;
     user-select: none;
 }
