@@ -53,14 +53,18 @@ body {
     width: 100%;
 }
 
-.anchor-wrap .anchor-text-container ul a {
+.anchor-wrap .anchor-text-container ul li {
     list-style-type: none;
     display: inline-block;
     color: #333;
-    text-decoration: none;
     font-size: 16px;
     margin-right: 64px;
     margin-top: 35px;
+}
+
+.anchor-wrap .anchor-text-container ul li a {
+    color: #333;
+    text-decoration: none;
 }
 
 .anchor-wrap .anchor-text-container ul:after {
@@ -97,17 +101,19 @@ body {
 }
 
 .main-section .item-detail-section .main-item-image-container {
-    width: 430px;
-    margin-left: 75px;
+    width: 400px;
+    height: 403px;
+    margin-left: 125px;
 }
 
 .main-section .item-detail-section .main-item-image-container .main-title-image {
-    width: 100%;
+    width: 400px;
+    height: 403px;
 }
 
 .main-section .item-detail-section .item-detail-wrap {
     width: 45%;
-    margin-left: 105px;
+    margin-left: 75px;
     margin-top: 40px;
 }
 
@@ -228,6 +234,7 @@ body {
 
 .main-section .review-section .comment-section .comment-wrap .account-icon_username img {
     width: 5%;
+    height: 100%;
     user-select: none;
 }
 
@@ -299,11 +306,12 @@ body {
     margin-left: -40px;
 }
 
-.footer-section .footer-section-list-container ul a {
+.footer-section .footer-section-list-container ul li a {
     color: #707070;
+    text-decoration: none;
 }
 
-.footer-section .footer-section-list-container ul a li {
+.footer-section .footer-section-list-container ul li {
     margin-right: 41px;
     float: left;
     list-style-type: none;
