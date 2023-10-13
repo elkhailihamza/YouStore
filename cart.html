@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/detail.css">
-    <meta name="description" content="detail page">
+    <link rel="stylesheet" href="css/cart.css">
+    <meta name="description" content="Item for sale">
     <title>YouShope</title>
 </head>
 
@@ -52,7 +52,7 @@
                             d="M14.8477 17.8827C14.8477 18.9004 15.6757 19.7285 16.6934 19.7285C17.7111 19.7285 18.5391 18.9004 18.5391 17.8827C18.5391 16.8651 17.7111 16.037 16.6934 16.037C15.6757 16.037 14.8477 16.8651 14.8477 17.8827ZM16.6934 17.2675C17.0325 17.2675 17.3086 17.5436 17.3086 17.8827C17.3086 18.2219 17.0325 18.498 16.6934 18.498C16.3542 18.498 16.0781 18.2219 16.0781 17.8827C16.0781 17.5436 16.3542 17.2675 16.6934 17.2675Z"
                             fill="black" />
                     </svg></a>
-                <a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="#333"
+                <a href="payform.html"><svg width="22" height="22" viewBox="0 0 22 22" fill="#333"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M16.0015 6C16.0015 8.76142 13.7623 11 11 11C8.23777 11 5.99851 8.76142 5.99851 6C5.99851 3.23858 8.23777 1 11 1C13.7623 1 16.0015 3.23858 16.0015 6ZM14.001 5.99999C14.001 4.34314 12.6575 2.99999 11.0001 2.99999C9.34275 2.99999 7.99919 4.34314 7.99919 5.99999C7.99919 7.65684 9.34275 8.99999 11.0001 8.99999C12.6575 8.99999 14.001 7.65684 14.001 5.99999ZM20.893 19.55L19.0024 15.76C18.1545 14.0683 16.4239 13.0001 14.5311 13H7.46893C5.57614 13.0001 3.84555 14.0683 2.99758 15.76L1.10701 19.55C0.950991 19.8595 0.966419 20.2277 1.14778 20.5231C1.32915 20.8185 1.65058 20.9989 1.99728 21H20.0027C20.3494 20.9989 20.6709 20.8185 20.8522 20.5231C21.0336 20.2277 21.049 19.8595 20.893 19.55ZM4.78818 16.66L3.61782 19H18.3823L17.2119 16.66C16.7046 15.644 15.667 15.0015 14.5311 15H7.46899C6.33315 15.0015 5.29552 15.644 4.78818 16.66Z"
@@ -65,147 +65,74 @@
         </div>
     </nav>
     <main role="main" class="main-section">
-        <section class="item-detail-section">
-            <div class="main-item-image-container">
-                <img src="img/detail_page/img01.png" alt="01" class="main-title-image">
+        <section class="current_cart-section">
+            <div class="title_currentlist-wrap">
+                <h1 class="page-title">Current Cart</h1>
+                <p class="list-amount">Item List: <span style="color: #A18A68;">3</span></p>
             </div>
-            <div class="item-detail-wrap">
-                <div class="item-detail">
-                    <h1 class="item-title">Lira Earrings</h1>
-                    <div class="item-detail_review">
-                        <p class="item-price">$ 20,00</p>
-                        <svg width="240" height="48" viewBox="0 0 240 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect width="48" height="48" fill="url(#pattern0)" />
-                            <rect x="48" width="48" height="48" fill="url(#pattern1)" />
-                            <rect x="192" width="48" height="48" fill="url(#pattern2)" />
-                            <rect x="144" width="48" height="48" fill="url(#pattern3)" />
-                            <rect x="96" width="48" height="48" fill="url(#pattern4)" />
-                            <defs>
-                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_1_7" transform="scale(0.0208333)" />
-                                </pattern>
-                                <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_1_7" transform="scale(0.0208333)" />
-                                </pattern>
-                                <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_1_7" transform="scale(0.0208333)" />
-                                </pattern>
-                                <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_1_7" transform="scale(0.0208333)" />
-                                </pattern>
-                                <pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_1_7" transform="scale(0.0208333)" />
-                                </pattern>
-                                <image id="image0_1_7" width="48" height="48"
-                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACu0lEQVR4nO2ZS2sTURTHr28FRUSoC4ViMHPOxLYqRUVcuPEruNKFKPgV+gHEKoiCC4WCILhoaXzW+t50Ydvk3MRdVXBRF924sCAIvmrzl5m0SYa8JnHuZEbyh7OcM7//OfdO7rlRqquuujImCB9zQsVV0PwCws9VHIUsD0K4AM1ALnlExU3Q9NSFd4MmVZwEbR8qVb8U1mEVF0F4wgvPgPBjFQdBUgerq+8aKDj7QkVd0PSwCr5kgh6oKAti74fwcn0DXEDGGlBRFTSn68KXY1xFUcimUg2rX+7CMvLUr6ImCI35qP7qXhhVURIySdtX9Su7oLmvM7AziR7krOMQOgvhSyvr/pNv+HI4z6TdHE4uJ+dMoicYyDf9O4pnGToF4SEIj0B4GsJf2wBtNX5A07tiYegKNF+Atk9CJxPNwYWGoWkxBMg2gxYdxvoGPu7bBOEnnQflevESs3u2NO7CXGojND2KACw8IfQMU72b/e2B/OAGCN+P0NKZdFaHL/iSibRaB6G7nYfncaegLcF7TGi+08FlM4qpE+vbgi+ZgFoDoZsdWDa3AbX2n+A9JjTfCK/yPBIYvMeE0PUQDNxy3hUovMeI5osGK3/VGHjbJ0//G3YsFPiiAb5noAPpMA18MGDgfTjwznlJ01LwBmip5V/btq9NTG3ibPKAeQPaOmPuK0SnQzBAlw0aGDZvwOS8IDxh3oDmeZ9AC8Vx0I0Fn8/Mm4WfS22tee/p/Zp8cefoismpOCQ5Ruhzkw4UME3bzBnI20cbrN9v7hCeT2xvUoChhpcDOYN/hiBrn68B/ss9PWb6dvnOI7xz5cbhe40OnjNnoPI0KvTbndiy1t62880md7vHdOGfFQauBUtd+UKh1yt7II2MnQws71u71+2i5j/Q9CqovNUvcpeKuetxZKwB5x2m8nfV1f+ov0WA2bF0AkOGAAAAAElFTkSuQmCC" />
-                            </defs>
-                        </svg>
-                        <p class="review-amount">15 Good Reviews</p>
+            <div class="item-list-container">
+                <div class="item">
+                    <div class="item-image">
+                        <img src="img/cart_page/img01.png" alt="01">
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-name-container">
+                            <h3>Lira Earrings</h3>
+                            <p style="color: #C20000; cursor: pointer;">Remove</p>
+                        </div>
+                        <p class="item-price" style="color: #A18A68;">$ 20,00</p>
+                        <div class="description-container">
+                            <p>Sed scelerisque, ante ac efficitur pretium, mauris sapien laor   eet nibh, in cursus sapien
+                                urna non nisl. Quisque ullamcorper rhoncus lorem sed condimentum.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="item-short-description">
-                    <p>Sed scelerisque, ante ac efficitur pretium, mauris sapien laoreet
-                        nibh, in cursus sapien urna non
-                        nisl. Quisque ullamcorper rhoncus lorem sed condimentum.</p>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="img/cart_page/img02.png" alt="02">
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-name-container">
+                            <h3>Hal Earrings</h3>
+                            <p style="color: #C20000; cursor: pointer;">Remove</p>
+                        </div>
+                        <p class="item-price" style="color: #A18A68;">$ 25,00</p>
+                        <div class="description-container">
+                            <p>tortor at risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi
+                                enim nunc faucibus a pellentesque sit amet porttitor eget et</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="add_to_cart-button">
-                    <a href="cart.html" role="button">
-                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="item">
+                    <div class="item-image">
+                        <img src="img/cart_page/img03.png" alt="03">
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-name-container">
+                            <h3>Kaede Hair Pin Set Of 3</h3>
+                            <p style="color: #C20000; cursor: pointer;">Remove</p>
+                        </div>
+                        <p class="item-price" style="color: #A18A68;">$ 30,00</p>
+                        <div class="description-container">
+                            <p>purus in massa tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra
+                                suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-section">
+                    <p class="checkout-amount">SubTotal: <span style="color: #A18A68;">$ 75,00</span></p>
+                    <a href="#" role="button" class="checkout-button">
+                        <p>Proceed To Checkout</p>
+                        <svg width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M6.76598 13.5765H6.76694C6.76774 13.5765 6.76854 13.5763 6.76934 13.5763H17.9238C18.1984 13.5763 18.4399 13.3941 18.5153 13.1301L20.9763 4.51682C21.0293 4.33113 20.9921 4.1315 20.876 3.97737C20.7597 3.82324 20.5778 3.73256 20.3848 3.73256H5.34709L4.90729 1.7534C4.84465 1.47189 4.59503 1.27162 4.30664 1.27162H0.615234C0.275413 1.27162 0 1.54704 0 1.88686C0 2.22668 0.275413 2.50209 0.615234 2.50209H3.81317C3.89104 2.85281 5.91779 11.9733 6.03442 12.498C5.38058 12.7823 4.92187 13.4342 4.92187 14.1915C4.92187 15.2092 5.74988 16.0372 6.76758 16.0372H17.9238C18.2636 16.0372 18.5391 15.7618 18.5391 15.422C18.5391 15.0822 18.2636 14.8068 17.9238 14.8068H6.76758C6.4284 14.8068 6.15234 14.5307 6.15234 14.1915C6.15234 13.8528 6.42744 13.5773 6.76598 13.5765V13.5765ZM19.5691 4.96303L17.4597 12.3458H7.26105L5.62042 4.96303H19.5691Z"
-                                fill="white" />
-                            <path
-                                d="M6.15234 17.8827C6.15234 18.9004 6.98035 19.7285 7.99805 19.7285C9.01575 19.7285 9.84375 18.9004 9.84375 17.8827C9.84375 16.8651 9.01575 16.037 7.99805 16.037C6.98035 16.037 6.15234 16.8651 6.15234 17.8827ZM7.99805 17.2675C8.33723 17.2675 8.61328 17.5436 8.61328 17.8827C8.61328 18.2219 8.33723 18.498 7.99805 18.498C7.65887 18.498 7.38281 18.2219 7.38281 17.8827C7.38281 17.5436 7.65887 17.2675 7.99805 17.2675Z"
-                                fill="white" />
-                            <path
-                                d="M14.8477 17.8827C14.8477 18.9004 15.6757 19.7285 16.6934 19.7285C17.7111 19.7285 18.5391 18.9004 18.5391 17.8827C18.5391 16.8651 17.7111 16.037 16.6934 16.037C15.6757 16.037 14.8477 16.8651 14.8477 17.8827ZM16.6934 17.2675C17.0325 17.2675 17.3086 17.5436 17.3086 17.8827C17.3086 18.2219 17.0325 18.498 16.6934 18.498C16.3542 18.498 16.0781 18.2219 16.0781 17.8827C16.0781 17.5436 16.3542 17.2675 16.6934 17.2675Z"
+                                d="M0 4.99124V3.74124C0 3.39606 0.279908 3.11624 0.625193 3.11624H20.0062V0.616238C20.0097 0.366191 20.1619 0.142308 20.3933 0.0470931C20.6246 -0.0481216 20.8904 0.00366328 21.069 0.178738L24.8201 3.92874C25.0599 4.17601 25.0599 4.56897 24.8201 4.81624L21.069 8.56624C20.8887 8.74287 20.6199 8.79382 20.3875 8.69542C20.1551 8.59702 20.0047 8.36856 20.0062 8.11624V5.61624H0.625193C0.279908 5.61624 0 5.33642 0 4.99124Z"
                                 fill="white" />
                         </svg>
-                        <p>add to cart</p>
                     </a>
                 </div>
             </div>
         </section>
-        <section class="description-section">
-            <div>
-                <h2 class="section-title">Description</h2>
-            </div>
-            <div class="description-wrap">
-                <hr>
-                <p class="description">Sed a nisi purus. Proin
-                    et pellentesque turpis.
-                    Nam efficitur interdum mi, facilisis lacinia libero cursus ac. Nunc at est dui. Duis euismod lorem
-                    tortor, nec dapibus sapien interdum eget. Duis aliquam dolor lectus, a tincidunt nisi accumsan non.
-                    Vivamus dictum neque in ipsum porta, vel faucibus erat aliquam. Suspendisse fermentum vestibulum
-                    ante
-                    sit amet ultrices. Vivamus aliquet sit amet velit et tincidunt.</p>
-                <br>
-                <p class="description">Dolore molestiae laboriosam, et consequuntur repudiandae ad ullam? In quae animi
-                    ratione quia doloribus corrupti veritatis dolorem beatae laborum libero. Praesentium ipsam fugiat ab
-                    delectus! Eligendi, similique explicabo. Pariatur iste totam sint!</p>
-                <br>
-                <p class="description">Itaque deserunt enim officia facilis eveniet accusamus consectetur assumenda
-                    voluptas, laudantium nihil quasi quos dicta! Itaque qui harum mollitia at ipsam vitae?</p>
-            </div>
-        </section>
-        <section class="review-section">
-            <div>
-                <h2 class="section-title">Reviews</h2>
-            </div>
-            <div class="comment-section">
-                <div class="comment-wrap">
-                    <div class="account-icon_username">
-                        <img src="img/detail_page/account_profile.png" alt="02">
-                        <div>
-                            <h3>username</h3>
-                            <h4>5h ago</h4>
-                        </div>
-                    </div>
-                    <div class="account-comment">
-                        <p>Accusamus molestias, excepturi
-                            aperiam asperiores modi voluptatum nihil eius ad eveniet. Eum fuga nesciunt dignissimos
-                            error maxime sequi placeat dolorum tempora doloribus provident labore neque itaque, atque
-                            accusantium facere ipsum excepturi recusandae. Eos autem tempore sunt architecto voluptas
-                            deserunt mollitia. Aspernatur, eaque!</p>
-                    </div>
-                </div>
-                <div class="comment-wrap">
-                    <div class="account-icon_username">
-                        <img src="img/detail_page/account_profile.png" alt="02">
-                        <div>
-                            <h3>username</h3>
-                            <h4>12h ago</h4>
-                        </div>
-                    </div>
-                    <div class="account-comment">
-                        <p>Dolorem, a quo? Veritatis ratione
-                            itaque accusantium. Temporibus suscipit reiciendis fugiat beatae dolor aut! Eius quaerat
-                            vero quae excepturi, vitae rerum eos doloremque nulla ut et a, veritatis nostrum tenetur?
-                            Laudantium, aliquam!</p>
-                    </div>
-                </div>
-                <div class="comment-wrap">
-                    <div class="account-icon_username">
-                        <img src="img/detail_page/account_profile.png" alt="02">
-                        <div>
-                            <h3>username</h3>
-                            <h4>20h ago</h4>
-                        </div>
-                    </div>
-                    <div class="account-comment">
-                        <p>Totam dolor esse enim magni et
-                            dignissimos dicta quibusdam, ducimus corrupti, earum quae quasi cum voluptate quia
-                            necessitatibus amet odio quos explicabo maxime. Sapiente voluptatum rem cum!</p>
-                    </div>
-                </div>
-                <div class="show-more-wrap">
-                    <p style="cursor: pointer; color: #466AC5;">show more</p>
-                </div>
-            </div>
-        </section>
     </main>
-
     <footer class="footer-section">
         <div class="footer-section-wrap">
             <div class="footer-section-list-container">

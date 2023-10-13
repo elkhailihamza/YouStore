@@ -318,7 +318,7 @@ body {
     width: 40%;
     display: inherit;
     align-items: end;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .footer-section .footer-section-email-input-container form {
