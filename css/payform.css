@@ -89,7 +89,6 @@ body {
 
 .main {
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -111,12 +110,14 @@ body {
 .main__payform-section__form-wrap {
     display: flex;
     justify-content: center;
-    height: 70vh;
-    width: 50%;
+    width: 525px;
 }
 
 .main__payform-section__form-wrap__form {
-    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 525px;
 }
 
 .main__payform-section__form-wrap__form input {
@@ -126,6 +127,9 @@ body {
     background: transparent;
     border: none;
     border-bottom: 1px solid #000000;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
 }
 
 .main__payform-section__form-wrap__form input:focus {
@@ -137,11 +141,6 @@ body {
     margin-left: 10px;
 }
 
-.main__payform-section__form-wrap__form__card__cvv {
-    width: 15%;
-    margin-left: 15%;
-}
-
 .main__payform-section__form-wrap__form__card-type {
     width: 90%;
     height: 30px;
@@ -150,8 +149,6 @@ body {
     font-size: 14px;
     border-bottom: 1px solid #000000;
     margin: 5px 30px;
-    display: flex;
-    justify-self: center;
 }
 
 .main__payform-section__form-wrap__form__card-type:focus {
@@ -159,26 +156,34 @@ body {
 }
 
 .main__payform-section__form-wrap__form__address {
-    width: 70%;
+    width: 100%;
     margin-top: -5px;
     margin-left: 75px;
 }
 
-.main__payform-section__form-wrap__form__address__submit-button {
+.main__payform-section__form-wrap__form__button-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.main__payform-section__form-wrap__form__button-wrap__submit-button {
     padding: 10px 50px;
     color: white;
     border: none;
-    font-size: 24px;
+    font-size: 20px;
     border-radius: 8px;
-    margin-left: 28%;
-    margin-top: 25px;
     background: #625541;
     cursor: pointer;
+    display: inherit;
+    justify-content: center;
+    align-items: center;   
+    gap: 10px;
 }
 
 .main__payform-section__form-wrap__form__address__submit-button svg {
-    margin-bottom: 2px;
-    margin-left: 3px;
+    width: 20px;
 }
 
 .footer {
@@ -269,4 +274,141 @@ body {
 
 .mobile_show_second {
     display: none;
+}
+
+@media only screen and (max-width: 1090px) {
+
+    .mobile_hide_first {
+        display: none;
+    }
+
+    .mobile_show_first {
+        display: block;
+    }
+
+    .navbar__wrap__anchor-wrap__list-container ul {
+        margin-right: 0;
+        float: none;
+    }
+
+    .navbar__wrap__anchor-wrap__list-container ul li {
+        list-style-type: none;
+        color: #333;
+        font-size: 16px;
+        margin-right: 40px;
+    }
+
+    .main__payform-section__title-wrap__title {
+        font-size: 34px;
+    }
+
+    .main__payform-section__form-wrap__form input {
+        width: 200px;
+        justify-self: center;
+        align-self: center;
+        align-items: center;
+    }
+
+    .footer {
+        height: 140px;
+        max-width: 1800px;
+    }
+
+    .footer__wrap__list-container {
+        max-width: 50%;
+        flex-wrap: wrap;
+    }
+
+    .footer__wrap__list-container ul {
+        width: 90%;
+    }
+
+    .footer__wrap__list-container ul li {
+        margin-bottom: 5px;
+        margin: 0 0 5px 0;
+        float: none;
+        font-size: 16px;
+    }
+
+    .footer__wrap__list-container ul li:nth-child(1) {
+        margin-top: 15px;
+    }
+
+    .footer__wrap__list-container ul li:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .footer__wrap__socialmedia {
+        width: 62.5%;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 2.5px;
+        margin-bottom: 15px;
+        gap: 20px;
+    }
+
+    .footer__wrap__form-container {
+        width: 20%;
+        display: inherit;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .mobile_show_second {
+        display: block;
+    }
+
+    .mobile_hide_second {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 725px) {
+
+    .main__payform-section__form-wrap__form input {
+        width: 175px;
+    }
+
+    .main__payform-section__title-wrap__title {
+        font-size: 28px;
+    }
+
+    .main__payform-section__form-wrap__form {
+        width: auto;
+    }
+
+    .main__payform-section__title-wrap {
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    .footer__wrap__form-container__form {
+        max-width: 200px;
+    }
+
+    .footer__wrap__form-container__form__email {
+        font-size: 13px;
+        overflow: hidden;
+        max-width: 150px;
+    }
+
+    .footer__wrap__list-container ul li {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    .main__payform-section__form-wrap__form input {
+        width: 130px;
+        margin-right: 10px;
+    }
+
+    .main__payform-section__title-wrap__title {
+        font-size: 24px;
+    }
 }
