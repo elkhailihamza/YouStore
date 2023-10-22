@@ -338,6 +338,7 @@ body {
     width: 40%;
     display: inherit;
     flex-direction: column;
+    align-items: flex-end;
 }
 
 .footer__wrap__form-container__form {
@@ -359,10 +360,6 @@ body {
     border: transparent;
     background: transparent;
     cursor: default;
-}
-
-.main__about-section__about-second-container__bulletpoints {
-    text-align: start;
 }
 
 .footer__wrap__form-container__form__submit-button {
