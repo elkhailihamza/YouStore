@@ -11,112 +11,115 @@ body {
     user-select: none;
 }
 
-.navbar-content {
+.navbar {
     max-width: 1800px;
     height: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     user-select: none;
 }
 
-.navbar-content .title-container {
-    width: 200px;
-    height: 75px;
-    text-align: center;
-    margin-left: 175px;
+.navbar__wrap {
+    width: 79%;
+    display: inherit;
+    justify-content: space-between;
 }
 
-.navbar-content .title-container .navbar-title {
+.navbar__wrap__title-container {
+    width: 190px;
+    text-align: center;
+}
+
+.navbar__wrap__title-container__title {
     color: #A18A68;
     text-decoration: none;
 }
 
-.navbar-content .title-container .navbar-title p {
-    font-size: 35px;
-    font-family: 'Allerta Stencil';
-    margin-top: 20px;
-}
-
-.navbar-content .title-container .navbar-title p span {
+.navbar__wrap__title-container__title p {
     font-size: 35px;
     font-family: 'Allerta Stencil';
 }
 
-.anchor-wrap {
-    max-width: 600px;
-    height: 75px;
-    margin-right: 200px;
+.navbar__wrap__title-container__title p span {
+    font-size: 35px;
+    font-family: 'Allerta Stencil';
+}
+
+.navbar__wrap__anchor-wrap {
     display: flex;
     justify-content: space-evenly;
+    align-self: center;
+    margin-top: 10px;
 }
 
-.anchor-wrap .anchor-text-container {
+.navbar__wrap__anchor-wrap__list-container {
     width: 100%;
 }
 
-.anchor-wrap .anchor-text-container ul li {
+.navbar__wrap__anchor-wrap__list-container ul {
+    margin-right: 10px;
+}
+
+.navbar__wrap__anchor-wrap__list-container ul li {
     list-style-type: none;
     display: inline-block;
     color: #333;
     font-size: 16px;
-    margin-right: 64px;
-    margin-top: 35px;
+    margin-right: 50px;
 }
 
-.anchor-wrap .anchor-text-container ul li a {
+.navbar__wrap__anchor-wrap__list-container ul li a {
     color: #333;
     text-decoration: none;
 }
 
-.anchor-wrap .anchor-text-container ul:after {
+.navbar__wrap__anchor-wrap__list-container ul:after {
     content: "|";
     position: absolute;
-    top: 35px;
-    right: 18.5pc;
+    top: 40px;
     opacity: 0.6;
 }
 
-.anchor-wrap .anchor-svg {
+.navbar__wrap__anchor-wrap__svg-container {
     width: 175px;
-    margin-top: 35px;
-    margin-right: -100px;
-    display: flex;
+    display: inherit;
     justify-content: space-between;
 }
 
-.main-section {
+.main {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
 }
 
-.main-section .payform-section {
+.main__payform-section {
     width: 70%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.main-section .payform-section .page-title {
+.main__payform-section__title-wrap {
     font-size: 44px;
     font-weight: 500;
     align-self: flex-start;
     margin: 40px 50px 50px 0;
 }
 
-.main-section .payform-section .full-form {
+.main__payform-section__form-wrap {
     display: flex;
     justify-content: center;
     height: 70vh;
     width: 50%;
 }
 
-.main-section .payform-section .full-form form {
+.main__payform-section__form-wrap__form {
     height: 100%;
 }
 
-.main-section .payform-section .full-form form input {
+.main__payform-section__form-wrap__form input {
     width: 250px;
     height: 50px;
     margin: 10px 0 20px 10px;
@@ -125,21 +128,21 @@ body {
     border-bottom: 1px solid #000000;
 }
 
-.main-section .payform-section .full-form form input:focus {
+.main__payform-section__form-wrap__form input:focus {
     background: none;
     outline: none;
 }
 
-.main-section .payform-section .full-form form .form-cardnumber {
+.main__payform-section__form-wrap__form__card__number {
     margin-left: 10px;
 }
 
-.main-section .payform-section .full-form form .form-cvv {
+.main__payform-section__form-wrap__form__card__cvv {
     width: 15%;
     margin-left: 15%;
 }
 
-.main-section .payform-section .full-form form select {
+.main__payform-section__form-wrap__form__card-type {
     width: 90%;
     height: 30px;
     background: transparent;
@@ -151,17 +154,17 @@ body {
     justify-self: center;
 }
 
-.main-section .payform-section .full-form form select:focus {
+.main__payform-section__form-wrap__form__card-type:focus {
     outline: none;
 }
 
-.main-section .payform-section .full-form form .form-address {
+.main__payform-section__form-wrap__form__address {
     width: 70%;
     margin-top: -5px;
     margin-left: 75px;
 }
 
-.main-section .payform-section .full-form form .submit-button {
+.main__payform-section__form-wrap__form__address__submit-button {
     padding: 10px 50px;
     color: white;
     border: none;
@@ -173,90 +176,97 @@ body {
     cursor: pointer;
 }
 
-.main-section .payform-section .full-form form .submit-button svg {
+.main__payform-section__form-wrap__form__address__submit-button svg {
     margin-bottom: 2px;
     margin-left: 3px;
 }
 
-.footer-section {
-    width: 100%;
-    height: 21vh;
+.footer {
+    margin-top: 50px;
+    max-width: 1800px;
+    height: 125px;
     display: flex;
     justify-content: center;
-    overflow: hidden;
 }
 
-.footer-section-wrap {
-    width: 83%;
+.footer__wrap {
+    width: 82%;
     height: 100%;
     display: inherit;
     justify-content: space-between;
     border-top: 2px solid #D8D8D8;
-
 }
 
-.footer-section .footer-section-list-container {
-    max-width: 62.7%;
+.footer__wrap__list-container {
+    width: 60%;
     display: inherit;
     align-items: center;
+    justify-content: flex-start;
 }
 
-.footer-section .footer-section-list-container ul {
-    margin-left: -40px;
+.footer__wrap__list-container ul {
+    padding: 0;
+    width: 100%;
 }
 
-.footer-section .footer-section-list-container ul li a {
-    color: #707070;
-    text-decoration: none;
-}
-
-.footer-section .footer-section-list-container ul li {
+.footer__wrap__list-container ul li {
     margin-right: 41px;
     float: left;
     list-style-type: none;
 }
 
-.footer-section .footer-section-email-input-container {
+.footer__wrap__list-container ul li a {
+    color: #707070;
+    text-decoration: none;
+}
+
+.footer__wrap__form-container {
     width: 40%;
     display: inherit;
-    align-items: end;
     flex-direction: column;
+    align-items: flex-end;
 }
 
-.footer-section .footer-section-email-input-container form {
-    width: 80%;
-    height: 75px;
+.footer__wrap__form-container__form {
+    max-width: 375px;
+    height: 40px;
     border-bottom: 1px solid #000000;
     user-select: none;
+    display: flex;
+    margin-top: 31px;
 }
 
-.footer-section .footer-section-email-input-container input:focus {
+.footer__wrap__form-container__form__email:focus {
     background: none;
     outline: none;
 }
 
-.footer-section .footer-section-email-input-container .footer-section-email-input .footer-email-input {
-    width: 365px;
-    height: 50px;
-    padding-left: 15px;
+.footer__wrap__form-container__form__email {
+    width: 225px;
     border: transparent;
     background: transparent;
-    margin-top: 30px;
     cursor: default;
 }
 
-.footer-section .footer-section-email-input-container .footer-section-email-input .footer-section-email-submit-button {
+.footer__wrap__form-container__form__submit-button {
     background: none;
     border: none;
-    padding-left: 0;
-    padding-bottom: 15.4px;
     cursor: pointer;
+    padding: 0;
 }
 
-.footer-section .footer-section-email-input-container .socialmedia-section {
-    width: 32%;
+.footer__wrap__form-container__socialmedia {
+    width: 45%;
     margin-top: 25px;
     display: flex;
     justify-content: end;
     gap: 29px;
+}
+
+.mobile_show_first {
+    display: none;
+}
+
+.mobile_show_second {
+    display: none;
 }
