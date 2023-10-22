@@ -411,4 +411,16 @@ body {
     .main__payform-section__title-wrap__title {
         font-size: 24px;
     }
+
+    .main__payform-section__title-wrap__title {
+        white-space: nowrap;
+    }
+
+    .main__payform-section__form-wrap {
+        width: 325px;
+    }
+
+    .main__payform-section__form-wrap__form__card-type {
+        width: 80%;
+    }
 }
