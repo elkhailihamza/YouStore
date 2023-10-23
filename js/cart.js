@@ -1,13 +1,48 @@
-var firstCard = document.getElementById('item1');
-var secondCard = document.getElementById('item2');
-var thirdCard = document.getElementById('item3');
+let removeCard = document.getElementsByClassName('remove');
+let cardParent = document.getElementsByClassName('removeParent');
 
-var remove1 = document.getElementById('remove1').addEventListener('click', function() {
-    item1.style.display = 'none';
-})
-var remove2 = document.getElementById('remove2').addEventListener('click', function() {
-    item2.style.display = 'none';
-})
-var remove3 = document.getElementById('remove3').addEventListener('click', function() {
-    item3.style.display = 'none';
-})
+let quantity = document.getElementsByClassName('quantity');
+let plus = document.getElementsByClassName('plus');
+let minus = document.getElementsByClassName('minus');
+
+let listNumber = document.getElementById('list_number');
+let subTotal = document.getElementById('total');
+let total = 75;
+let listNum = cardParent.length;
+
+let price = [20.00, 25.00, 30.00];
+
+listNumber.innerHTML = listNum;
+
+for (let i = 0; i < cardParent.length; i++) {
+    plus[i].addEventListener('click', function () {
+        if (quantity[i].value < 99) {
+            quantity[i].value++;
+
+            total += price[i];
+            subTotal.innerHTML = total;
+        }
+    })
+    minus[i].addEventListener('click', function () {
+        if (quantity[i].value > 1) {
+            quantity[i].value--;
+
+            total -= price[i];
+            subTotal.innerHTML = total;
+        }
+    })
+}
+
+for (let i = 0; i < cardParent.length; i++) {
+    removeCard[i].addEventListener('click', function () {
+        cardParent[i].style.display = 'none';
+
+        let temp = quantity[i].value;
+        temp *= price[i];
+        total -= temp;
+
+        subTotal.innerHTML = total;
+        listNum--;
+        listNumber.innerHTML = listNum;
+    })
+}
