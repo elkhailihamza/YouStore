@@ -421,6 +421,10 @@ body {
         display: none;
     }
 
+    hr {
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 725px) {
