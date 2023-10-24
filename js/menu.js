@@ -10,9 +10,10 @@ menu.addEventListener('click', function () {
 })
 
 window.addEventListener('resize', function () {
-    if (window.innerWidth > 850) {
+    if (window.innerWidth >= 850) {
         menu_item.style.display = 'flex';
     } else {
         menu_item.style.display = 'none';
     }
 })
+    
