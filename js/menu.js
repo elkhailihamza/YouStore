@@ -1,6 +1,12 @@
 let menu = document.getElementById('burgerMenu');
 let menu_item = document.getElementById('menu_item');
 
+function oneTimeRunner() {
+    if (window.innerWidth < 850) {
+        menu_item.style.display = 'none';
+    }
+}
+
 menu.addEventListener('click', function () {
     if (menu_item.style.display == 'none') {
         menu_item.style.display = 'flex';
@@ -16,4 +22,5 @@ window.addEventListener('resize', function () {
         menu_item.style.display = 'none';
     }
 })
-    
+
+oneTimeRunner();
