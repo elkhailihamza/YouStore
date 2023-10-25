@@ -45,6 +45,6 @@ for (let i = 0; i < cardParent.length; i++) {
         listNum--;
         listNumber.innerHTML = listNum;
 
-        removeCard[i].removeEventListener('click');
+        removeCard[i].removeEventListener;
     })
 }
