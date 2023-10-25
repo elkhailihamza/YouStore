@@ -89,44 +89,74 @@
                 <p class="main__payform-section__title-wrap__title">Complete Transaction</p>
             </div>
             <div class="main__payform-section__form-wrap">
-                <form class="main__payform-section__form-wrap__form">
-                    <div>
-                        <input type="text" placeholder="Fullname" name="name" maxlength="30" required>
-                        <input type="password" placeholder="Password" name="password" maxlength="40" required>
-                    </div>
-                    <div>
-                        <input type="email" placeholder="Email" name="email" maxlength="40" required>
-                        <input type="text" placeholder="Phone Number" name="phonenumber" maxlength="12" required>
-                    </div>
-                    <div class="main__payform-section__form-wrap__form__card">
-                        <input type="text" placeholder="Card number"
-                            class="main__payform-section__form-wrap__form__card__number" maxlength="16" required>
-                        <input type="text" placeholder="CVV" maxlength="4" required>
-                    </div>
-                    <select class="main__payform-section__form-wrap__form__card-type" name="Card Type"
-                        aria-label="credit card type" required>
-                        <option value="" disabled selected hidden>Select Card Type</option>
-                        <option value="visa">VISA</option>
-                        <option value="mastercard">Master-Card</option>
-                        <option value="paypal">Paypal</option>
-                    </select>
-                    <div class="main__payform-section__form-wrap__form__expire-date">
-                        <input type="text" placeholder="Expire date" maxlength="4" required>
-                        <input type="text" placeholder="Postal Code" maxlength="10" required>
-                    </div>
-                    <input class="main__payform-section__form-wrap__form__address" type="text" placeholder="Address"
-                        maxlength="30" required>
-                    <div class="main__payform-section__form-wrap__form__button-wrap">
-                        <button class="main__payform-section__form-wrap__form__button-wrap__submit-button" type="submit"
-                            role="button">Submit
-                            <svg width="25" height="9" viewBox="0 0 25 9" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0 4.99124V3.74124C0 3.39606 0.279908 3.11624 0.625193 3.11624H20.0062V0.616238C20.0097 0.366191 20.1619 0.142308 20.3933 0.0470931C20.6246 -0.0481216 20.8904 0.00366328 21.069 0.178738L24.8201 3.92874C25.0599 4.17601 25.0599 4.56897 24.8201 4.81624L21.069 8.56624C20.8887 8.74287 20.6199 8.79382 20.3875 8.69542C20.1551 8.59702 20.0047 8.36856 20.0062 8.11624V5.61624H0.625193C0.279908 5.61624 0 5.33642 0 4.99124Z"
-                                    fill="white" />
-                            </svg>
-                        </button>
-                    </div>
+                <form id="form" class="main__payform-section__form-wrap__form">
+                    <div class="main__payform-section__form-wrap__form__container">
+                        <div class="main__payform-section__form-wrap__form__container-fullname">
+                            <div class="userinput">
+                                <input type="text" placeholder="Firstname" name="fullname" maxlength="25" required>
+                                <span class="fullnameerror error"></span>
+                            </div>
+                            <div class="userinput">
+                                <input type="text" placeholder="Lastname" name="fullname" maxlength="25" required>
+                                <span class="fullnameerror error"></span>
+                            </div>
+                        </div>
+                        <div class="main__payform-section__form-wrap__form__container__email-container">
+                            <div class="userinput">
+                                <input id="email" type="email" placeholder="Email" maxlength="40" required>
+                                <span class="emailphoneerror error"></span>
+                            </div>
+                            <div class="userinput">
+                                <input id="phonenumber" type="text" placeholder="Phone Number" maxlength="12" required>
+                                <span class="emailphoneerror error"></span>
+                            </div>
+                        </div>
+                        <div class="main__payform-section__form-wrap__form__card">
+                            <div class="userinput">
+                                <input id="cardnumber" type="text" placeholder="Card number"
+                                    class="main__payform-section__form-wrap__form__card__number" maxlength="16"
+                                    required>
+                                <span class="cardcvverror error"></span>
+                            </div>
+                            <div class="userinput">
+                                <input id="cvv" type="text" placeholder="CVV" maxlength="4" required>
+                                <span class="cardcvverror error"></span>
+                            </div>
+                        </div>
+                        <select class="main__payform-section__form-wrap__form__card-type" name="Card Type"
+                            aria-label="credit card type" required>
+                            <option value="" disabled selected hidden>Select Card Type</option>
+                            <option value="visa">VISA</option>
+                            <option value="mastercard">Master-Card</option>
+                            <option value="paypal">Paypal</option>
+                        </select>
+                        <div class="main__payform-section__form-wrap__form__expire-date">
+                            <div class="userinput">
+                                <input id="expiredate" type="text" placeholder="MM/YY" maxlength="5" required>
+                                <span class="expirepostalerror error"></span>
+                            </div>
+                            <div class="userinput">
+                                <input id="postalcode" type="text" placeholder="Postal Code" maxlength="10" required>
+                                <span class="expirepostalerror error"></span>
+                            </div>
+                        </div>
+                        <div class="userinput">
+                            <input id="address" class="main__payform-section__form-wrap__form__address" type="text"
+                                placeholder="Address" maxlength="30" required>
+                            <span class="addresserror error"></span>
+                        </div>
+                        <div class="main__payform-section__form-wrap__form__button-wrap">
+                            <button id="submit"
+                                class="main__payform-section__form-wrap__form__button-wrap__submit-button" type="submit"
+                                role="button">Submit
+                                <svg width="25" height="9" viewBox="0 0 25 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 4.99124V3.74124C0 3.39606 0.279908 3.11624 0.625193 3.11624H20.0062V0.616238C20.0097 0.366191 20.1619 0.142308 20.3933 0.0470931C20.6246 -0.0481216 20.8904 0.00366328 21.069 0.178738L24.8201 3.92874C25.0599 4.17601 25.0599 4.56897 24.8201 4.81624L21.069 8.56624C20.8887 8.74287 20.6199 8.79382 20.3875 8.69542C20.1551 8.59702 20.0047 8.36856 20.0062 8.11624V5.61624H0.625193C0.279908 5.61624 0 5.33642 0 4.99124Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
                 </form>
             </div>
         </section>
@@ -219,6 +249,8 @@
         </div>
     </footer>
 
+    <script src="js/formvalidation.js"></script>
     <script src="js/menu.js"></script>
 </body>
+
 </html>

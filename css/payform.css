@@ -122,6 +122,12 @@ body {
     width: 525px;
 }
 
+.main__payform-section__form-wrap__form__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .main__payform-section__form-wrap__form input {
     width: 250px;
     height: 50px;
@@ -129,9 +135,6 @@ body {
     background: transparent;
     border: none;
     border-bottom: 1px solid #000000;
-    justify-self: center;
-    align-self: center;
-    align-items: center;
 }
 
 .main__payform-section__form-wrap__form input:focus {
@@ -180,12 +183,63 @@ body {
     cursor: pointer;
     display: inherit;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
     gap: 10px;
 }
 
 .main__payform-section__form-wrap__form__address__submit-button svg {
     width: 20px;
+}
+
+.main__payform-section__form-wrap__form__container-fullname {
+    display: flex;
+}
+
+.main__payform-section__form-wrap__form__container__email-container {
+    display: flex;
+}
+
+.main__payform-section__form-wrap__form__card {
+    display: flex;
+}
+
+.main__payform-section__form-wrap__form__expire-date {
+    display: flex;
+}
+
+.userinput {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fullnameerror {
+    top: 19.8pc;
+}
+
+.emailphoneerror {
+    top: 24.8pc;
+}
+
+.cardcvverror {
+    top: 29.8pc;
+}
+
+.expirepostalerror {
+    top: 37pc;
+}
+
+.addresserror {
+    top: 40pc;
+}
+
+.error {
+    font-size: 13px;
+    color: red;
+    text-decoration: underline;
+    position: absolute;
+    margin-left: 10px;
 }
 
 .footer {
@@ -311,6 +365,9 @@ body {
         align-items: center;
     }
 
+    .main__payform-section__form-wrap__form__card-type {
+        width: 80%;
+    }
     .footer {
         height: 140px;
         max-width: 1800px;
@@ -376,18 +433,18 @@ body {
     .main__item-section__detail-wrap__container__review__amount {
         display: block;
     }
-    
+
     .main__item-section__detail-wrap {
         max-width: 100%;
         margin: 30px 0;
 
     }
-    
+
     .main__item-section__image-wrap {
         justify-self: center;
         align-self: center;
     }
-    
+
     .main__item-section__detail-wrap__button {
         width: 300px;
         justify-self: center;
@@ -491,6 +548,10 @@ body {
         width: 25px;
     }
 
+    .main__payform-section__form-wrap__form__card-type {
+        width: 70%;
+    }
+
 }
 
 @media only screen and (max-width: 725px) {
@@ -510,6 +571,10 @@ body {
     .main__payform-section__title-wrap {
         width: 100%;
         white-space: nowrap;
+    }
+
+    .main__payform-section__form-wrap__form__card-type {
+        width: 60%;
     }
 
     .footer__wrap__form-container__form {
