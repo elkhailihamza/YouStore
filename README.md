@@ -30,6 +30,7 @@ The project consists of the following key pages:
 ## Installation and Usage
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/elkhailihamza/YouStore.git
    cs YouStore
