@@ -33,7 +33,7 @@ The project consists of the following key pages:
 
    ```bash
    git clone https://github.com/elkhailihamza/YouStore.git
-   cs YouStore
+   cd YouStore
 2. Open the ```index.html``` file in a web browser to view the homepage.
 
 ## Future Improvements
